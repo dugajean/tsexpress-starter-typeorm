@@ -1,6 +1,6 @@
 {
   "name": "@tsexpress-starter/typeorm",
-  "version": "0.1.8",
+  "version": "0.1.0",
   "description": "TypeORM integration for TSExpress Starter.",
   "keywords": [
     "typescript",
@@ -31,8 +31,8 @@
   },
   "dependencies": {
     "@tsexpress-starter/errors": "^0.1.1",
-    "typeorm": "^0.2.18",
-    "class-validator": "^0.10.0"
+    "class-validator": "^0.10.0",
+    "typeorm": "^0.2.18"
   },
   "devDependencies": {
     "@types/node": "^12.7.1",
