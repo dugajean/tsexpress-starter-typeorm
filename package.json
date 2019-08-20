@@ -1,0 +1,65 @@
+{
+  "name": "@tsexpress-starter/typeorm",
+  "version": "0.1.8",
+  "description": "TypeORM integration for TSExpress Starter.",
+  "keywords": [
+    "typescript",
+    "express"
+  ],
+  "author": "Dukagjin Surdulli <me@dukagj.in> (https://dukagj.in/)",
+  "homepage": "https://github.com/dugajean/tsexpress-starter-typeorm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dugajean/tsexpress-starter-typeorm/issues",
+    "email": "me@dukagj.in"
+  },
+  "contributors": [
+    "Dukagjin Surdulli <me@dukagj.in> (https://dukagj.in/)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dugajean/tsexpress-starter-typeorm.git"
+  },
+  "main": "dist/helpers.js",
+  "types": "dist/helpers.d.ts",
+  "scripts": {
+    "prepublish": "yarn build",
+    "dev": "tsc -w",
+    "build": "rimraf dist && yarn lint && tsc",
+    "lint": "tslint -p tsconfig.json -c tslint.json",
+    "test": "cross-env NODE_ENV=test tsc && ava"
+  },
+  "dependencies": {
+    "@tsexpress-starter/errors": "^0.1.1",
+    "typeorm": "^0.2.18",
+    "class-validator": "^0.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.1",
+    "ava": "^2.2.0",
+    "rimraf": "^2.6.3",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  },
+  "peerDependencies": {
+    "typeorm": "*"
+  },
+  "ava": {
+    "failFast": true,
+    "verbose": true,
+    "helpers": [
+      "test/helpers/**/*"
+    ],
+    "compileEnhancements": false,
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  },
+  "engines": {
+    "node": ">=8.3"
+  }
+}
