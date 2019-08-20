@@ -20,8 +20,8 @@
     "type": "git",
     "url": "git+https://github.com/dugajean/tsexpress-starter-typeorm.git"
   },
-  "main": "dist/helpers.js",
-  "types": "dist/helpers.d.ts",
+  "main": "dist/modules.js",
+  "types": "dist/modules.d.ts",
   "scripts": {
     "prepublish": "yarn build",
     "dev": "tsc -w",
