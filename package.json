@@ -1,6 +1,6 @@
 {
   "name": "@tsexpress-starter/typeorm",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "TypeORM integration for TSExpress Starter.",
   "keywords": [
     "typescript",
