@@ -22,7 +22,7 @@ In your `server.ts` file, add the following lines:
 ```javascript
 // src/server.ts
 // ...
-import connect from '@tsexpress-starter/typeorm';
+import { connect } from '@tsexpress-starter/typeorm';
 
 const app = new Application(__dirname, express());
 

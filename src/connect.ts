@@ -6,7 +6,7 @@ import { createConnection, EntitySubscriberInterface } from 'typeorm';
 import insertStatus from './insert-status';
 import entityValidation from './entity-validation';
 
-export default function connect(app: Application, ...subscribers: EntitySubscriberInterface[]): Promise<void> {
+export function connect(app: Application, ...subscribers: EntitySubscriberInterface[]): Promise<void> {
   return createConnection({
     type: process.env.DB_TYPE as any,
     host: process.env.DB_HOST,
