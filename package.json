@@ -20,8 +20,8 @@
     "type": "git",
     "url": "git+https://github.com/dugajean/tsexpress-starter-typeorm.git"
   },
-  "main": "dist/modules.js",
-  "types": "dist/modules.d.ts",
+  "main": "dist/connect.js",
+  "types": "dist/connect.d.ts",
   "scripts": {
     "prepublish": "yarn build",
     "dev": "tsc -w",
@@ -30,7 +30,9 @@
     "test": "cross-env NODE_ENV=test tsc && ava"
   },
   "dependencies": {
+    "@tsexpress-starter/application": "^0.2.1",
     "@tsexpress-starter/errors": "^0.1.1",
+    "@tsexpress-starter/utils": "^0.1.8",
     "class-validator": "^0.10.0",
     "typeorm": "^0.2.18"
   },
